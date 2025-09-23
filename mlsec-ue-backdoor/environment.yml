@@ -1,0 +1,14 @@
+name: ue-backdoor
+channels:
+  - pytorch
+  - nvidia
+dependencies:
+  - pytorch=2.4.1
+  - torchvision=0.19.1
+  - pytorch-cuda=12.1
+  - numpy=2.1.2
+  - pillow=9.4.0
+  - ipykernel=6.29.5
+  - matplotlib=3.9.1
+  - tqdm
+  - ipywidgets
