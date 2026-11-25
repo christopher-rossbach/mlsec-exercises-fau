@@ -2,7 +2,14 @@ This repository contains exercises I designed for the Machine Learning Lecture h
 The solutions are excluded for obvious reasons.
 
 These exercises cover only parts of the lecture.
-The repository contains exercises on gradient inversion attacks in federated learning and dataset poisoning.
+The repository contains exercises on evasion attacks, gradient inversion attacks in federated learning, and dataset poisoning.
+
+For evasion attacks, we implement the attack described in "Towards Evaluating the Robustness of Neural Networks" by Nicholas Carlini and David Wagner (https://arxiv.org/abs/1608.04644).
+Students are tasked to implement the targeted L2 version of the attack against a pretrained ResNet and to experiment with the hyperparameters until the attack succeeds.
+Then, we extend both the Carlini-Wagner attack and the Fast Gradient Sign Method (FGSM) from the previous exercise to targeted and untargeted attacks and compare them in terms of perturbation size, visual quality, and success.
+The exercise continues in the FGSM notebook of the previous exercise, which I did not design and which is therefore not included.
+The task description and supplementary material are provided in the `mlsec-ue-carlini-wagner` folder.
+The task description can be found [here](mlsec-ue-carlini-wagner/e02.pdf).
 
 For gradient inversion, we implement the approach described in "Inverting Gradients - How easy is it to break privacy in federated learning?" by Jonathan Geiping et al. (https://arxiv.org/abs/2003.14053).
 Students are tasked to implement the attack and encouraged to experiment with different hyperparameters to reconstruct images from the gradients they produced during a single training round.
